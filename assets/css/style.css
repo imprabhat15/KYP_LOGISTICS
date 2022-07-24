@@ -3564,210 +3564,148 @@ table p {
 ----------------------------------------------------------------------
 */
 
-.client-area.client-default-area {
-  background-color: #f5f5f5;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-}
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-.client-area.client-default-area .container {
-  padding: 60px 15px;
-  position: relative;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-
-@media only screen and (max-width: 1199px) {
-  .client-area.client-default-area .container {
-    padding: 30px 15px 30px;
-  }
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
 }
-
-@media only screen and (max-width: 767px) {
-  .client-area.client-default-area .container {
-    padding: 77px 15px 72px;
-  }
-}
-
-.client-area.client-default-area .section-title {
-  margin-bottom: 30px;
-}
-
-@media only screen and (max-width: 1199px) {
-  .client-area.client-default-area .section-title {
-    margin-bottom: 61px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .client-area.client-default-area .section-title {
-    margin-bottom: 40px;
-  }
-}
-
-.client-area.client-default-area .section-title .subtitle {
-  margin-bottom: 18px;
-}
-
-@media only screen and (max-width: 1199px) {
-  .client-area.client-default-area .section-title .subtitle {
-    margin-bottom: 15px;
-  }
-}
-
-.client-area.client-default-area .shape-group .shape-style2 {
-  left: -145px;
-  opacity: 0.06;
-  position: absolute;
-  pointer-events: none;
-  top: 0;
-  z-index: -1;
-}
-
-.client-area.client-default-area .shape-group .shape-style3 {
-  opacity: 0.06;
-  position: absolute;
-  pointer-events: none;
-  right: -132px;
-  top: 0;
-  z-index: -1;
-}
-
-.client-area {
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
   padding: 40px 0;
 }
-
-@media only screen and (max-width: 767px) {
-  .client-area {
-    padding: 80px 0;
-  }
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
 }
-
-.client-area .client-item {
-  margin-bottom: 30px;
+.clientHeading{
+text-align: center;
+color: #ff5e14;
+padding-bottom: 1rem;
+} 
+.card{
+  border-radius: 25px;
+  background-color: #FFF;
 }
-
-.client-item {
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fd7e14;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #fd7e14;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fd7e14;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
   text-align: center;
 }
-
-.client-item .thumb {
-  border-radius: 2px 2px 0 0;
-  overflow: hidden;
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
   background-color: #ff5e14;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: #000000;
 }
 
-.client-item .thumb:after {
-  background-color: transparent;
+.swiper-navBtn{
+  color: #fd7e14;
+  transition: color 0.3s ease;
 }
-
-.client-item .thumb img {
-  width: 100%;
-  padding: 1rem;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
+.swiper-navBtn:hover{
+  color: #ffb579;
 }
-
-.client-item .content {
-  background-color: #f5f5f5;
-  border-radius: 0 0 0 2px;
-  padding: 31px 12px 29px;
-  position: relative;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 91% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 91% 100%, 0% 100%);
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
 }
-
-.client-item .content h5 {
-  font-size: 1rem;
-  margin-top: 10px;
-  text-align: left;
+.swiper-button-next{
+  right: 0;
 }
-
-.client-item .content span a {
-  color: #ff5e14;
-  font-size: 1.5rem;
-  font-weight: bolder;
-}
-
-@media only screen and (max-width: 1199px) {
-  .client-item .content {
-    padding: 20px 10px 10px;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  .client-item .content {
-    padding: 25px 10px 27px;
-  }
-}
-
-.client-item .content:after {
-  background-color: #ff5e14;
-  content: "";
-  height: 0;
+.swiper-button-prev{
   left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
+}
+.swiper-pagination-bullet{
+  background-color: #f79c52;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #d97f35;
 }
 
-.client-item .content .title {
-  font-size: 23px;
-  line-height: 1;
-  margin-bottom: 0;
-}
-
-@media only screen and (max-width: 1199px) {
-  .client-item .content .title {
-    font-size: 20px;
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
   }
-}
-
-@media only screen and (max-width: 575px) {
-  .client-item .content .title {
-    font-size: 18px;
+  .swiper-navBtn{
+    background-color :white;
   }
-}
-
-.client-item .content .title a {
-  color: #05103b;
-}
-
-/* .service-item:hover .thumb img {
-  transform: scale(1.08);
-  -webkit-transform: scale(1.08);
-  -moz-transform: scale(1.08);
-  -ms-transform: scale(1.08);
-  -o-transform: scale(1.08);
-} */
-.client-item:hover .content:after {
-  background-color: #ff5e14;
-  height: 100%;
-}
-
-.client-item:hover .content .title a,
-.client-item:hover .content h4,
-.client-item:hover .content h5,
-.client-item:hover .content a {
-  color: #fff;
-}
-
-.client-area .swiper-btn-next {
-  top: 5rem;
-  right: 2rem;
-}
-
-.client-area .swiper-btn-prev {
-  top: 5rem;
-  left: 2rem;
 }
 
 
