@@ -3046,9 +3046,9 @@ table p {
 	About CSS
 -----------------------------------------------------------------------
 */
-.about-area.about-default-area {
+/* .about-area.about-default-area {
   padding: 50px 0 50px;
-}
+} */
 
 .about-area.about-default-area .container h1 {
   text-align: center;
@@ -3057,9 +3057,9 @@ table p {
 }
 
 @media only screen and (max-width: 767px) {
-  .about-area.about-default-area {
+  /* .about-area.about-default-area {
     padding: 77px 0 80px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1199px) {
