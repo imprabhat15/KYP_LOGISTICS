@@ -3225,14 +3225,13 @@ table p {
 
 @media only screen and (max-width: 767px) {
   .about-thumb {
-    margin-left: 0;
-    margin-right: 0;
+    display: none;
   }
 }
 
-.about-thumb img {
+/* .about-thumb img {
   width: 100%;
-}
+} */
 
 .about-content-style1 .about-thumb {
   margin-left: 20px;
