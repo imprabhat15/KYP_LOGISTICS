@@ -4790,132 +4790,12 @@ Divider CSS
   }
 }
 
-/*
------------------------------------------------------------------------
+
+/* -----------------------------------------------------------------------
   Project CSS
------------------------------------------------------------------------
-*/
-#gallery {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
+----------------------------------------------------------------------- */
 
-.Ourgallery {
-  width: 100%;
-  height: 80%;
-  position: relative;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  /* border: 2px solid red; */
-}
-
-#gallery h2 {
-  /* border-left: 7px solid #3b5c99; */
-  display: block;
-  height: 47px;
-  padding-left: 14px;
-  color: #fd7e14;
-  font-size: 38px;
-  font-weight: 700;
-  padding-bottom: 50px;
-  margin: auto;
-  text-align: center;
-}
-
-.gallerybox {
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-items: center;
-  height: 40%;
-  width: 25%;
-  /* border: 2px solid white; */
-  margin: 1rem;
-  overflow: hidden;
-  border-radius: 15px;
-  transition: all 400ms ease-in-out;
-}
-
-.gallerybox .gallery-image {
-  position: relative;
-  height: 200px;
-  width: 100%;
-  /* border-radius: 50%; */
-  background: #FFF;
-  /* padding: 3px; */
-}
-.gallerybox .gallery-img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  /* border-radius: 50%; */
-  /* border: 4px solid #fd7e14; */
-}
-
-#gallery .gallerybox article {
-  color: black;
-  padding: 1rem;
-  border-radius: 1rem;
-  display: flex;
-  gap: 1.5rem;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  transition: all 400ms ease;
-}
-
-.gallerybox h4 {
-  line-height: 2.5rem;
-  font-size: 1.5rem;
-  /* text-decoration: underline; */
-  color: #fd7e14;
-  text-align: center;
-}
-.gallerybox h6 {
-  line-height: 2rem;
-  font-size: 1rem;
-  /* text-decoration: underline; */
-  color: #fd7e14;
-  text-align: center;
-}
-.gallerybox .gallery-description{
-  text-align: center;
-}
-
-.gallerybox .read-more {
-  margin-bottom: 1rem;
-}
-
-.gallerybox .read-more a {
-  border: none;
-  font-size: 16px;
-  color: #FFF;
-  padding: 8px 16px;
-  background-color: #ff5e14;
-  border-radius: 6px;
-  margin: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.gallerybox .read-more a:hover{
-  background: #000000;
-}
-
-
-
-
-
-
-
-
-
-/* .project-default-area {
+.project-default-area {
   padding: 60px 0 0;
   position: relative;
 }
@@ -5076,7 +4956,7 @@ Divider CSS
 .project-default-area .swiper-btn-prev {
   top: 5rem;
   left: 3rem;
-} */
+}
 
 .portfolio-filter-menu {
   -webkit-box-align: center;
@@ -5411,7 +5291,6 @@ Divider CSS
   border-radius: 2px;
 }
 
-/*
 -----------------------------------------------------------------------
     Blog CSS
 -----------------------------------------------------------------------
