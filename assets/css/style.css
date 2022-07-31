@@ -3715,114 +3715,7 @@ padding-bottom: 1rem;
 -----------------------------------------------------------------------
 */
 
-#services {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.Ourservices {
-  width: 100%;
-  height: 80%;
-  position: relative;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  /* border: 2px solid red; */
-}
-
-#services h2 {
-  /* border-left: 7px solid #3b5c99; */
-  display: block;
-  height: 47px;
-  padding-left: 14px;
-  color: #fd7e14;
-  font-size: 38px;
-  font-weight: 700;
-  padding-bottom: 50px;
-  margin: auto;
-  text-align: center;
-}
-
-.servicebox {
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-items: center;
-  height: 40%;
-  width: 25%;
-  /* border: 2px solid white; */
-  margin: 1rem;
-  overflow: hidden;
-  border-radius: 15px;
-  transition: all 400ms ease-in-out;
-}
-
-.servicebox .service-image {
-  position: relative;
-  height: 200px;
-  width: 100%;
-  /* border-radius: 50%; */
-  background: #FFF;
-  /* padding: 3px; */
-}
-.servicebox .service-img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  /* border-radius: 50%; */
-  /* border: 4px solid #fd7e14; */
-}
-
-#services .servicebox article {
-  color: black;
-  padding: 1rem;
-  border-radius: 1rem;
-  display: flex;
-  gap: 1.5rem;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  transition: all 400ms ease;
-}
-
-.servicebox h4 {
-  line-height: 2.5rem;
-  font-size: 1.5rem;
-  /* text-decoration: underline; */
-  color: #fd7e14;
-  text-align: center;
-}
-.servicebox .service-description{
-  text-align: center;
-}
-
-.servicebox .readmore {
-  margin-bottom: 1rem;
-}
-
-.servicebox .readmore a {
-  border: none;
-  font-size: 16px;
-  color: #FFF;
-  padding: 8px 16px;
-  background-color: #ff5e14;
-  border-radius: 6px;
-  margin: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.servicebox .readmore a:hover{
-  background: #000000;
-}
-
-
-
-/* .service-area .service-default-area {
+ .service-area .service-default-area {
   background-color: #f5f5f5;
   overflow: hidden;
   position: relative;
@@ -3834,6 +3727,27 @@ padding-bottom: 1rem;
   position: relative;
 }
 
+.service-item .service-description{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #000;
+  font-size: 700;
+}
+
+.service-item .readmore a {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #ff5e14;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.service-item .readmore a:hover{
+  background: #000000;
+}
 @media only screen and (max-width: 1199px) {
   .service-area.service-default-area .container {
     padding: 30px 15px 30px;
@@ -3892,7 +3806,7 @@ padding-bottom: 1rem;
 
 .service-area.service-grid-area {
   padding: 40px 0;
-} */
+} 
 
 @media only screen and (max-width: 767px) {
   .service-area.service-grid-area {
@@ -3941,11 +3855,11 @@ padding-bottom: 1rem;
 
 .service-item .content {
   background-color: #f5f5f5;
-  border-radius: 0 0 0 2px;
+  /* border-radius: 0 0 0 2px; */
   padding: 31px 12px 29px;
   position: relative;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 91% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 91% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 91% 100%, 0% 100%);
 }
 
 @media only screen and (max-width: 1199px) {
@@ -3958,6 +3872,16 @@ padding-bottom: 1rem;
   .service-item .content {
     padding: 25px 10px 27px;
   }
+  /* .swiper-btn-next{
+    display: none;
+  }
+  .swiper-btn-prev{
+    display: none;
+  } */
+  /* .service-item{
+    display: flex;
+    flex-direction: column;
+  } */
 }
 
 .service-item .content:after {
@@ -6420,6 +6344,8 @@ Divider CSS
     padding-left: 0;
   }
 }
+
+
 
 /*
 -----------------------------------------------------------------------
