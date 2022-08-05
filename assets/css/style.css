@@ -2963,7 +2963,11 @@ table p {
   width: 100%;
   height: 100vh;
 }
-
+@media only screen and (max-width: 1100px) {
+  .carousel-inner .carousel-item img {
+    object-fit: cover;    
+  }
+}
 .carousel .carousel-item h1,
 .carousel .carousel-item p {
   position: relative;
@@ -6344,6 +6348,110 @@ Divider CSS
     padding-left: 0;
   }
 }
+
+ /* ----===== Contact us section starts ====-----  */
+
+#contactus{
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  padding: 137px 0 130px;
+}
+
+#contactus .contact-heading{
+  text-align: center;
+  color: #ff5e14;
+  padding-bottom: 1rem;
+}
+
+.contact-container{
+  /* border: 2px solid #000; */
+  /* width: 100%; */
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 48%));
+  text-align: center;
+  justify-content: space-evenly;
+  /* height: 500px; */
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.cont-left{
+  border: 3px solid #ff5e14;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 3px 3px 12px #ff5e14;
+}
+.cont-left h1{
+  color: #fd7e14;
+}
+.cont-left h3{
+  color: #fd7e14;
+}
+.left-content{
+  padding-top: 40px;
+  display: flex;
+
+}
+
+/* .cont-right{
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.cont-right{
+  /* padding:10px; */
+  flex: 0.5;
+  display: grid;
+  /* border: 2px solid green; */
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 20px;
+}
+.cont-right > * {
+  padding:10px;
+  /* border: 1px solid #000; */
+}
+.cont-right ul{
+  padding:10px;
+  list-style: none;
+}
+
+.cont-right .cont1{
+  border: 3px solid #ff5e14;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px #ff5e14;
+}
+.cont-right .cont2{
+  border: 3px solid #ff5e14;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px #ff5e14;
+}
+.cont-right .cont3{
+  border: 3px solid #ff5e14;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px #ff5e14;
+}
+.cont-right .cont4{
+  border: 3px solid #ff5e14;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px #ff5e14;
+}
+
+
+
+ /* ----===== Contact us section ends ====-----  */
 
 
 
